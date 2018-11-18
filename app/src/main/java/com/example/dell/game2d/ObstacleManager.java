@@ -27,7 +27,12 @@ private long startTime;
         populateObstacle();
 
     }
-
+public boolean playerCollide(RectPlayer player){
+        for (Obstacle ob:obstacle){
+            if (ob.playerCollide(player))
+                return true;
+        }return false;
+}
     private void populateObstacle(){
 
         int currY =-5*Constants.SCREEN_HEIGHT/4;
