@@ -1,6 +1,8 @@
 package com.example.dell.game2d;
 
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 
 import java.util.ArrayList;
 
@@ -15,13 +17,14 @@ private int obstacleGap;
 private int obstacleHeight;
 private int color;
 private long startTime;
-
+private long initTime;
+private int score =0;
     public ObstacleManager(int playerGap, int obstacleGap, int obstacleHeight,int color){
         this.playerGap=playerGap;
         this.obstacleGap=obstacleGap;
         this.obstacleHeight= obstacleHeight;
         this.color = color;
-        startTime= System.currentTimeMillis();
+        startTime= initTime=System.currentTimeMillis();
         obstacle=new ArrayList<>();
 
         populateObstacle();
@@ -46,7 +49,7 @@ public boolean playerCollide(RectPlayer player){
     public void update(){
 int elapsedTime=(int)( System.currentTimeMillis()-startTime);
 startTime=System.currentTimeMillis();
-float speed = Constants.SCREEN_HEIGHT/10000.0f;
+float speed =(float)(Math.sqrt(1+(startTime-initTime)/2000.0))* Constants.SCREEN_HEIGHT/10000.0f;
 for (Obstacle ob : obstacle){
 ob.incrementY(speed*elapsedTime);
 }
@@ -54,12 +57,17 @@ if (obstacle.get(obstacle.size()-1).getRectangle().top>=Constants.SCREEN_HEIGHT)
     int xStart= (int)(Math.random()*(Constants.SCREEN_WIDTH-playerGap));
     obstacle.add(0,new Obstacle(obstacleHeight,color,xStart,obstacle.get(0).getRectangle().top-obstacleHeight-obstacleGap,playerGap));
     obstacle.remove(obstacle.size()-1);
+    score++;
 
 }
    }
     public void draw (Canvas canvas){
         for (Obstacle ob : obstacle){
             ob.draw(canvas);
+            Paint paint = new Paint();
+            paint.setTextSize(100);
+            paint.setColor(Color.LTGRAY);
+            canvas.drawText(""+score,50,50+paint.descent()-paint.ascent(),paint);
         }
     }
 }
