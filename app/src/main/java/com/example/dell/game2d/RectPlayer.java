@@ -13,6 +13,10 @@ public class RectPlayer  implements GameObject {
 private Rect rectangle;
 private int color;
 
+private Animation idle;
+private Animation walkRight;
+private Animation walkLeft;
+
     public Rect getRectangle(){
         return rectangle;
     }

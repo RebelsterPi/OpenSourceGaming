@@ -20,6 +20,9 @@ private SceneManager manager;
     public GamePanel(Context context){
         super(context);
         getHolder().addCallback(this );
+
+        Constants.CURRENT_CONTEXT=context;
+
         thread = new MainThread(getHolder(),this);
         manager= new SceneManager();
         setFocusable(true);
