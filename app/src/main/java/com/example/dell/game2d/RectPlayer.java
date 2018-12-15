@@ -28,9 +28,9 @@ public RectPlayer(Rect rectangle, int color ){
     this.color= color;
 
     BitmapFactory bf = new BitmapFactory();
-    Bitmap idleimage = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(),R.drawable.aliengreen);
-Bitmap walk1 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(),R.drawable.aliengreen_walk1);
-    Bitmap walk2 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(),R.drawable.aliengreen_walk2);
+    Bitmap idleimage = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(),R.drawable.a);
+Bitmap walk1 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(),R.drawable.b);
+    Bitmap walk2 = bf.decodeResource(Constants.CURRENT_CONTEXT.getResources(),R.drawable.c);
 
     idle = new Animation(new Bitmap[]{idleimage},2);
     walkRight=new Animation( new Bitmap[]{walk1,walk2},0.5f);
