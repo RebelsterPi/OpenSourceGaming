@@ -15,7 +15,7 @@ public class OrientationData implements SensorEventListener
     private float[] accelOutput;
     private float[] magOutput;
 
-    private float[] orientation;
+    private float[] orientation= new float[3];
     public float[] getOrientation(){
         return orientation;
     }
@@ -50,7 +50,17 @@ if (event.sensor.getType()== Sensor.TYPE_ACCELEROMETER){
 else if (event.sensor.getType()==Sensor.TYPE_MAGNETIC_FIELD)
     magOutput= event.values;
 if (accelOutput!=null && magOutput!=null ){
+float[] R = new float[9];
+float[] I = new float[9];
+boolean success =SensorManager.getRotationMatrix(R,I, accelOutput, magOutput);
+if (success){
+    SensorManager.getOrientation(R, orientation);
+    if (startOrientation==null){
+        startOrientation = new float [orientation.length];
+        System.arraycopy(orientation, 0 , startOrientation,0, orientation.length);
+    }
 
+}
         }
     }
 
