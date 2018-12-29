@@ -6,15 +6,26 @@ Android Game Development in Android Studio
 Mainly coded in Java. 
 
 # Technologies used in Java 
+
 Canvas
+
 Draw2D
+
 Point 
+
 MotionEvent 
+
 DisplayMatrics
+
 WindowManager
+
 SurfaceHolder
+
 SurfaceView
+
 BitMap
+
 Animation
+
 
 
