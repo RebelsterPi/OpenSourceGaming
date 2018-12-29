@@ -3,29 +3,28 @@
 [![Join the chat at https://gitter.im/androgamedev/community](https://badges.gitter.im/androgamedev/community.svg)](https://gitter.im/androgamedev/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Android Game Development in Android Studio
-Mainly coded in Java. 
 
-# Technologies used in Java 
+Mainly coded in **Java**. 
 
-Canvas
+## Technologies of Java used here 
 
-Draw2D
+*Canvas
+*Draw2D
+*Point 
+*MotionEvent 
+*DisplayMatrics
+*WindowManager
+*SurfaceHolder
+*SurfaceView
+*BitMap
+*Animation
 
-Point 
+## Screen Shots
 
-MotionEvent 
+Coming Soon!
 
-DisplayMatrics
-
-WindowManager
-
-SurfaceHolder
-
-SurfaceView
-
-BitMap
-
-Animation
-
+## Creator 
+ 
+ RebelsterPi
 
 
