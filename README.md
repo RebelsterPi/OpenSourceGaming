@@ -8,16 +8,16 @@ Mainly coded in **Java**.
 
 ## Technologies of Java used here 
 
-*Canvas
-*Draw2D
-*Point 
-*MotionEvent 
-*DisplayMatrics
-*WindowManager
-*SurfaceHolder
-*SurfaceView
-*BitMap
-*Animation
+* Canvas
+* Draw2D
+* Point 
+* MotionEvent 
+* DisplayMatrics
+* WindowManager
+* SurfaceHolder
+* SurfaceView
+* BitMap
+* Animation
 
 ## Screen Shots
 
