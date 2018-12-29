@@ -23,7 +23,7 @@ public GamePlayScene(){  player = new RectPlayer(new Rect(100,100,200,200), Colo
     playerPoint= new Point(Constants.SCREEN_WIDTH/2,3*Constants.SCREEN_HEIGHT/4);
     player.update(playerPoint);
 
-    obstacleManager= new ObstacleManager(200,350,75,Color.WHITE);
+    obstacleManager= new ObstacleManager(200,400,75,Color.WHITE);
     orientationData= new OrientationData();
     orientationData
             .register();
@@ -35,7 +35,7 @@ public GamePlayScene(){  player = new RectPlayer(new Rect(100,100,200,200), Colo
         playerPoint= new Point(Constants.SCREEN_WIDTH/2,3*Constants.SCREEN_HEIGHT/4);
         player.update(playerPoint);
 
-        obstacleManager= new ObstacleManager(200,350,75,Color.WHITE);
+        obstacleManager= new ObstacleManager(200,400,75,Color.WHITE);
         movingPlayer = false;
     }
 
