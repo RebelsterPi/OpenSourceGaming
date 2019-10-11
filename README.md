@@ -23,6 +23,10 @@ Mainly coded in **Java**.
 
 Coming Soon!
 
+## About the game 
+
+The game is survive the hudles and let the spaceship pass through the opening and move as far as possible
+
 ## Creator 
  
  RebelsterPi
