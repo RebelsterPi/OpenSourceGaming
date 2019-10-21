@@ -4,7 +4,7 @@
 
 Android Game Development in Android Studio
 
-Mainly coded in **Java**. 
+Mainly coded in **Java**. The Code is written from scratch. 
 
 ## Technologies of Java used here 
 
@@ -24,7 +24,8 @@ Mainly coded in **Java**.
 Coming Soon!
 
 ## Creator 
- 
- RebelsterPi
+
+ Pranesh Ulleri
+ RebelsterPi 
 
 
